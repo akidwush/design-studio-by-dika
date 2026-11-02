@@ -1,0 +1,36 @@
+{
+  "tests": [
+    {
+      "name": "com.nexora.studio.HybridDocumentTest",
+      "tests": "10",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-11-02T09:24:10"
+    },
+    {
+      "name": "com.nexora.studio.EditorInteractionTest",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-11-02T09:24:02"
+    }
+  ],
+  "lint": {
+    "app": {
+      "errors": 0,
+      "warnings": 12
+    },
+    "engines": {
+      "errors": 0,
+      "warnings": 18
+    }
+  },
+  "apk": {
+    "path": "app/build/outputs/apk/debug/app-debug.apk",
+    "bytes": 1125713,
+    "sha256": "c7c1662c06d9f986863445f2002c586e748aa0e4667f48eedab030c1d3545b52"
+  },
+  "wrapper_sha256": "2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046"
+}

@@ -1,0 +1,131 @@
+PASS: 127 upstream files and Gradle Wrapper checksum
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.11.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :engines:preBuild UP-TO-DATE
+> Task :engines:preDebugBuild UP-TO-DATE
+> Task :engines:writeDebugAarMetadata UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :engines:generateDebugResValues UP-TO-DATE
+> Task :engines:generateDebugResources UP-TO-DATE
+> Task :engines:packageDebugResources UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:mergeDebugResources
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :engines:extractDeepLinksDebug UP-TO-DATE
+> Task :engines:processDebugManifest UP-TO-DATE
+> Task :app:parseDebugLocalResources
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :engines:compileDebugLibraryResources UP-TO-DATE
+> Task :engines:parseDebugLocalResources UP-TO-DATE
+> Task :app:processDebugManifestForPackage
+> Task :engines:generateDebugRFile UP-TO-DATE
+> Task :engines:javaPreCompileDebug UP-TO-DATE
+> Task :engines:compileDebugJavaWithJavac UP-TO-DATE
+> Task :engines:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :engines:mergeDebugShaders UP-TO-DATE
+> Task :engines:compileDebugShaders NO-SOURCE
+> Task :engines:generateDebugAssets UP-TO-DATE
+> Task :engines:mergeDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :engines:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :engines:processDebugJavaRes NO-SOURCE
+> Task :engines:preDebugUnitTestBuild UP-TO-DATE
+> Task :engines:generateDebugUnitTestStubRFile UP-TO-DATE
+> Task :engines:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :engines:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :engines:processDebugUnitTestJavaRes NO-SOURCE
+> Task :engines:testDebugUnitTest NO-SOURCE
+> Task :engines:mergeDebugJniLibFolders UP-TO-DATE
+> Task :engines:mergeDebugNativeLibs NO-SOURCE
+> Task :engines:stripDebugDebugSymbols NO-SOURCE
+> Task :engines:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :engines:extractDebugAnnotations UP-TO-DATE
+> Task :engines:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :engines:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :engines:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :engines:prepareDebugArtProfile UP-TO-DATE
+> Task :engines:prepareLintJarForPublish UP-TO-DATE
+> Task :engines:mergeDebugJavaResource UP-TO-DATE
+> Task :engines:syncDebugLibJars UP-TO-DATE
+> Task :engines:bundleDebugLocalLintAar UP-TO-DATE
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:generateDebugAndroidTestResValues UP-TO-DATE
+> Task :engines:createFullJarDebug UP-TO-DATE
+> Task :engines:writeDebugLintModelMetadata UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :engines:extractProguardFiles UP-TO-DATE
+> Task :app:processDebugResources
+> Task :engines:generateDebugLintModel UP-TO-DATE
+> Task :app:packageDebugUnitTestForUnitTest
+> Task :app:generateDebugUnitTestConfig
+> Task :engines:lintAnalyzeDebug UP-TO-DATE
+> Task :engines:preDebugAndroidTestBuild UP-TO-DATE
+> Task :engines:generateDebugAndroidTestResValues UP-TO-DATE
+> Task :engines:generateDebugAndroidTestLintModel UP-TO-DATE
+> Task :engines:generateDebugUnitTestLintModel UP-TO-DATE
+> Task :engines:lintAnalyzeDebugAndroidTest UP-TO-DATE
+> Task :engines:lintAnalyzeDebugUnitTest UP-TO-DATE
+> Task :engines:generateDebugLintReportModel UP-TO-DATE
+> Task :engines:lintReportDebug UP-TO-DATE
+> Task :engines:lintDebug
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :engines:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :engines:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :app:mergeDebugNativeLibs NO-SOURCE
+> Task :app:stripDebugDebugSymbols NO-SOURCE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :engines:bundleDebugAar UP-TO-DATE
+> Task :engines:assembleDebug UP-TO-DATE
+> Task :app:compileDebugKotlin
+> Task :app:compileDebugJavaWithJavac NO-SOURCE
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:processDebugJavaRes UP-TO-DATE
+> Task :app:generateDebugAndroidTestLintModel
+> Task :app:generateDebugLintReportModel
+> Task :app:generateDebugUnitTestLintModel
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes UP-TO-DATE
+--- Failed to create image decoder with message 'unimplemented'
+> Task :app:testDebugUnitTest
+> Task :app:lintAnalyzeDebugAndroidTest
+> Task :app:lintAnalyzeDebug
+> Task :app:lintAnalyzeDebugUnitTest
+> Task :app:dexBuilderDebug
+> Task :app:mergeDebugGlobalSynthetics UP-TO-DATE
+> Task :app:mergeDebugJavaResource UP-TO-DATE
+
+> Task :app:lintReportDebug
+Wrote HTML report to file:///workspace/design-studio-by-dika/app/build/reports/lint-results-debug.html
+
+> Task :app:lintDebug
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:assembleDebug
+
+BUILD SUCCESSFUL in 32s
+95 actionable tasks: 28 executed, 67 up-to-date
