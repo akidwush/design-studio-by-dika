@@ -24,7 +24,7 @@ Di cloud ini Gradle dijalankan dengan JAVA_HOME JDK 17 lengkap, cache di `/works
 | APK signature | PASS, debug APK Signature Scheme v2 |
 | Package metadata | `com.nexora.studio`, version 0.1.0, minSdk 26 / targetSdk 35 |
 | Audit source provenance | PASS, 127 upstream source/resource files unchanged |
-| GitHub Actions remote run | Workflow disiapkan; hasil run remote belum diverifikasi |
+| GitHub Actions remote run | **PASS**, [run #2](https://github.com/akidwush/design-studio-by-dika/actions/runs/41420984554), commit `5c360031955c9b41d259030e2fc905201cd9752a`; tests/lint/build dan kedua upload artifact berhasil |
 | Emulator / HP fisik | BELUM DIJALANKAN; tidak ada perangkat/emulator terpasang, `/dev/kvm` tidak tersedia |
 
 Tes mencakup round-trip gabungan circle vector + stroke bitmap, ID/order/transform/opacity/lock/visibility, pixel PNG transparan dan isi kanvas, export yang tidak mengubah dokumen, eraser, undo/redo, PNG/JPEG import, corrupt image, SVG holes/clipping/transform dan preservasi XML, penolakan SVG berbahaya/tidak didukung, bentrok ID resource saat export SVG, ZIP traversal/arsip rusak/ZIP bomb, recovery write terputus, input sentuhan brush/eraser pada Android View, serta penolakan path traversal/write oleh share provider.
@@ -37,4 +37,10 @@ Kegagalan awal yang diselesaikan: sandbox mencegah akses proxy; Java bawaan hany
 
 Bukti: [log build](audit/build-validation.log), [ringkasan mesin](audit/validation-summary.json), [signature](audit/apk-signature.txt), [dependency runtime](audit/runtime-dependencies.txt), dan laporan lengkap lokal `app/build/reports/`, `engines/build/reports/`. Modul engine tidak memiliki unit test sendiri (`NO-SOURCE`); 12 tes aplikasi menjalankan engine nyata. APK: `app/build/outputs/apk/debug/app-debug.apk`.
 
-SHA-256 APK: `c7c1662c06d9f986863445f2002c586e748aa0e4667f48eedab030c1d3545b52`.
+SHA-256 APK lokal: `c7c1662c06d9f986863445f2002c586e748aa0e4667f48eedab030c1d3545b52`. APK CI memakai signing debug runner sendiri sehingga hash dapat berbeda.
+
+## Hasil GitHub Actions
+
+Run pertama gagal di `android-actions/setup-android@v3` sebelum build aplikasi. Penggantinya memakai command-line tools resmi Google 13114758 dengan checksum terverifikasi, serta checkout/setup-java/upload-artifact/Gradle actions v5. CLI SDK 19.0 juga diuji dengan JDK 17 di cloud. Workflow YAML dan semua shell step lolos validasi sintaks.
+
+[Run #2](https://github.com/akidwush/design-studio-by-dika/actions/runs/41420984554) berhasil menyelesaikan test/lint/build pada 2 November 2026 pukul 16:31:31 WIB, verifikasi APK pada 16:31:32 WIB, upload `nexora-debug-apk` pada 16:31:33 WIB dan `android-build-reports` pada 16:31:35 WIB. Buka run tersebut → Artifacts → nexora-debug-apk → ekstrak ZIP → pasang APK. Source telah dikirim ke branch `work`; tidak ada PR/merge atau force-push. HP/emulator tetap belum diuji.

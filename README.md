@@ -2,6 +2,8 @@
 
 Editor Android native Kotlin + engine Java, offline, tanpa server/API key. Target Android 8.0+ (API 26), compile/target SDK 35. Fondasi MVP: satu brush smooth CiDrawing, eraser, layer bitmap/gambar/vector, shape vector yang tetap editable, SVG impor read-only, NXD, PNG dan Android Sharesheet. Status pengujian aktual ada di [VALIDATION.md](VALIDATION.md).
 
+**APK tersedia:** [GitHub Actions run #2 yang berhasil](https://github.com/akidwush/design-studio-by-dika/actions/runs/41420984554) → artifact **nexora-debug-apk**. Build cloud juga lulus 12 tes dan lint tanpa error. Pengujian HP nyata masih diperlukan.
+
 ## Unduh APK dari HP
 
 1. Pastikan commit proyek sudah tersedia di GitHub. Buka repository → **Actions → Android APK**. Workflow berjalan saat push ke `main`, `work`, `develop`, `codex/**`, atau **Run workflow**.
